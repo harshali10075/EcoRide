@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideSharing</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Light gray background */
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .signup-form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+            .signup-form h2 {
+                margin-bottom: 20px;
+            }
+
+            .signup-form p {
+                margin-bottom: 15px;
+            }
+
+            .signup-form label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .signup-form input[type="text"],
+            .signup-form input[type="email"],
+            .signup-form select {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+
+            .signup-form button {
+                background-color: #333;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
+        .info {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+            .info img {
+                width: 50px;
+                margin-right: 15px;
+                vertical-align: middle;
+            }
+
+            .info h3 {
+                margin-bottom: 10px;
+            }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+            footer .row {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+            }
+
+            footer .column {
+                flex: 1;
+            }
+
+            footer ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            footer a {
+                color: white;
+                text-decoration: none;
+            }
+
+        .social-icon {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="#" class="logo">RideSharing.com</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="login.html">Sign Up</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Menu</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="signup-form">
+                <h2>Sign up for free</h2>
+                <p>Drivers and passengers don't pay any registration or membership fee</p>
+
+                <form>
+                    <label for="gender">Gender:</label>
+                    <select id="gender">
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" placeholder="First Name">
+
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" placeholder="Last Name">
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" placeholder="Email Address">
+
+                    <label for="terms">
+                        <input type="checkbox" id="terms">
+                        I accept the terms of use of this Service and confirm that I am at least 20 years old.
+                    </label>
+
+                    <div class="captcha">
+
+                        <button type="button">Verify</button>
+                    </div>
+
+                    <button type="submit">Sign Up</button>
+                </form>
+            </section>
+
+            <section class="info">
+                <img src="location-icon.png" alt="Location Icon">
+                <h3>Daily commute & long distance rides</h3>
+                <p>Find or offer a daily commute or travel with us everywhere in Canada and in the United States.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <h3>Passengers</h3>
+                    <ul>
+                        <li><a href="#">Search for a ride</a></li>
+                        <li><a href="#">How does it work?</a></li>
+                        <li><a href="#">Help/FAQ</a></li>
+                        <li><a href="#">My seat bookings</a></li>
+                        <li><a href="#">Cancellation policy</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Drivers</h3>
+                    <ul>
+                        <li><a href="#">Post a ride</a></li>
+                        <li><a href="#">How does it work?</a></li>
+                        <li><a href="#">Help/FAQ</a></li>
+                        <li><a href="#">My passengers' list</a></li>
+                        <li><a href="#">Cancellation policy</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Ridesharing.com</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Corporate solutions</a></li>
+                        <li><a href="#">Events solutions</a></li>
+                        <li><a href="#">Our corporate clients</a></li>
+                        <li><a href="#">Terms of use & privacy policy</a></li>
+                        <li><a href="#">Legality & insurance</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Questions?</h3>
+                    <ul>
+                        <li><a href="mailto:info@ridesharing.com">Email</a></li>
+                        <li>
+                            <label for="language">Language:</label>
+                            <select id="language">
+                                <option value="en">English</option>
+                                <option value="fr">French</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="country">Country/Currency:</label>
+                            <select id="country">
+                                <option value="ca">Canada</option>
+                                <option value="us">United States</option>
+                            </select>
+                        </li>
+                        <li>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter">
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
